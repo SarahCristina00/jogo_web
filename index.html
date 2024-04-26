@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esbugalhado - Jogo do Beto Carneiro</title>
+    <script src="main.js" type="module" ></script> 
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@900&family=Silkscreen&display=swap" rel="stylesheet">
+
+
+    
+</head>
+<body>
+    
+    <main>
+        <div class = "texto-orientacao">
+            <h1>Esbugalhado - Jogo do Beto Carneiro</h1>
+            <p>O jogo Consiste em 2 jogadores que irão utilizar</p>
+            <p>o Dado para tirar valores e, o jogo acaba quando</p>
+            <p>um dos jogadores completa a tabela. Ao final, é</p>
+            <p>feito um calculo e o jogador com maior</p>
+            <p>pontuação vence!</p>
+     </div>
+     <div id="mensagem" class="mensagem"></div>
+        <div class="tabuleiro">
+            <!-- Área do jogador 1 -->
+            <div class="area-jogador1">
+                <h2>Jogador 1</h2>
+                <table>
+                    <p id="somaColunaJogador1_1">Coluna 1: 0</p>
+                    <p id="somaColunaJogador1_2">Coluna 2: 0</p>
+                    <p id="somaColunaJogador1_3">Coluna 3: 0</p>
+                    <p id="somaTotalJogador1"> Total : 0</p>
+
+                    <tr>
+                        <td id="c11"></td> 
+                        <td id="c12"></td>
+                        <td id="c13"></td>
+                    </tr>
+                    <tr>
+                        <td id="c14"></td>
+                        <td id="c15"></td>
+                        <td id="c16"></td>
+                    </tr>
+                    <tr>
+                        <td id="c17"></td>
+                        <td id="c18"></td>
+                        <td id="c19"></td>
+                    </tr>
+                         
+                    <button id="gerarNumeroBtn">Jogar Dado</button>
+                    <p id="resultado">Dado: </p>
+                </table>
+           </div>
+            
+           
+            <!-- Área do jogador 2 -->
+            <div class="area-jogador">
+                <h2>Jogador 2</h2>
+                <table>
+                    <p id="somaColunaJogador2_1">Coluna 1: 0</p>
+                    <p id="somaColunaJogador2_2">Coluna 2: 0</p>
+                    <p id="somaColunaJogador2_3">Coluna 3: 0</p>
+                    <p id="somaTotalJogador2"> Total : 0</p>
+                    <tr>
+                        <td id="c21"></td>
+                        <td id="c22"></td>
+                        <td id="c23"></td>
+                    </tr>
+                    <tr>
+                        <td id="c24"></td>
+                        <td id="c25"></td>
+                        <td id="c26"></td>
+                    </tr>
+                    <tr>
+                        <td id="c27"></td>
+                        <td id="c28"></td>
+                        <td id="c29"></td>
+                    </tr>
+            
+                    <button id="gerarNumeroBtnJogador2">Jogar Dado</button>
+                    <p id="resultadoJogador2">Dado: </p>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+   
+</body>
+</html>
